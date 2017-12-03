@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zBB-5A-gkB"/>
+                        <viewControllerLayoutGuide type="bottom" id="18r-fo-Gxg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w1T-Dx-bfn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurred-background-in-green-color_1035-3316" translatesAutoresizingMaskIntoConstraints="NO" id="Sxe-Kf-GRD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyD-uE-Bal">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qI2-gU-0Fa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="attachment 1" translatesAutoresizingMaskIntoConstraints="NO" id="lRA-yc-Mru">
+                                            <rect key="frame" x="86" y="254" width="242" height="242"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="242" id="IGw-64-eZi"/>
+                                                <constraint firstAttribute="width" secondItem="lRA-yc-Mru" secondAttribute="height" multiplier="1:1" id="WQt-4j-DKI"/>
+                                                <constraint firstAttribute="height" constant="242" id="uWg-Fb-tfx"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="lRA-yc-Mru" secondAttribute="trailing" constant="86" id="RkV-Rt-zMv"/>
+                                        <constraint firstItem="lRA-yc-Mru" firstAttribute="leading" secondItem="qI2-gU-0Fa" secondAttribute="leading" constant="86" id="Srw-1x-6AN"/>
+                                        <constraint firstItem="lRA-yc-Mru" firstAttribute="top" secondItem="qI2-gU-0Fa" secondAttribute="top" constant="254" id="lvQ-kc-fp7"/>
+                                        <constraint firstAttribute="trailing" secondItem="lRA-yc-Mru" secondAttribute="trailing" constant="86" id="seJ-JM-Pe2"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sxe-Kf-GRD" secondAttribute="trailing" id="0U0-Vv-ycD"/>
+                            <constraint firstItem="Sxe-Kf-GRD" firstAttribute="top" secondItem="w1T-Dx-bfn" secondAttribute="top" id="7vk-Hi-hk9"/>
+                            <constraint firstAttribute="trailing" secondItem="iyD-uE-Bal" secondAttribute="trailing" id="HYJ-MC-tBn"/>
+                            <constraint firstItem="18r-fo-Gxg" firstAttribute="top" secondItem="iyD-uE-Bal" secondAttribute="bottom" id="PeH-kE-coW"/>
+                            <constraint firstItem="18r-fo-Gxg" firstAttribute="top" secondItem="Sxe-Kf-GRD" secondAttribute="bottom" id="UXG-lU-b6g"/>
+                            <constraint firstItem="iyD-uE-Bal" firstAttribute="leading" secondItem="w1T-Dx-bfn" secondAttribute="leading" id="aZy-j3-dyy"/>
+                            <constraint firstItem="iyD-uE-Bal" firstAttribute="top" secondItem="w1T-Dx-bfn" secondAttribute="top" id="iCs-G7-JEo"/>
+                            <constraint firstItem="Sxe-Kf-GRD" firstAttribute="leading" secondItem="w1T-Dx-bfn" secondAttribute="leading" id="uHg-UZ-BIe"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="attachment 1" width="474" height="516"/>
+        <image name="blurred-background-in-green-color_1035-3316" width="626" height="626"/>
+    </resources>
+</document>
